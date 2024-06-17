@@ -8,3 +8,6 @@ def index(request):
         return HttpResponse("You must have POSTed something")
     else:
         return HttpResponse(request.method)
+
+def home(request):
+    return HttpResponse("Welcome to the home page!")
